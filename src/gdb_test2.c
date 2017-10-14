@@ -3,15 +3,14 @@
 
 void foo()
 {
-    char *x = 0;
-    *x = 3;
-    return;
+        char *x = 0;
+        *x = 3;
+        return;
 }
 
-int
-main(int argc, char **argv)
+int main(void)
 {
-    foo();
+        foo();
 
-    return 0;
+        return 0;
 }

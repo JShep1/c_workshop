@@ -1,15 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
-int
-main(int argc, char **argv)
+int main(void)
 {
-    char a[2];
+        char a[2];
 
-    a[0] = 'a';
+        a[0] = 'a';
 
-    if(!strcmp(a, "a")) {
-        printf("a is \"a\"");
-    }
+        if(!strcmp(a, "a")) {
+            printf("a is \"a\"");
+        }
 
-    return 0;
+        return 0;
 }

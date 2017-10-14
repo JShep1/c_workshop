@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int
-main(int argc, char **argv)
+int main(void)
 {
-    char *s;
-    int num_bytes = 100, num_cycles = 100, i = 0;
+        char *s;
+        int num_bytes = 64, i = 0;
 
-    s = malloc(num_bytes);
+        s = malloc(num_bytes);
 
-    for (i = 0; i < num_cycles; i++){
-        printf("Cool operations here.\n");
-    }
+        for (i = 0; i < num_bytes; i++){
+            s[i] = ('a' + (i % 26));
+            printf("Storing %c at %i\n",s[i], i);
+        }
 
-    printf("Done executing.\n");
+        printf("Done executing.\n");
 
-    return 0;
+        return 0;
 }

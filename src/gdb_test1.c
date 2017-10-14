@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int
-main(int argc, char **argv)
+main(void)
 {
-	int i;
-	int sum;
+	    int i;
+	    int sum;
 
-	sum = 0;
-	for(i = 0; i -= 1000; i++) {
-		sum += i;
-	}
-	printf("%d\n", sum);
-	return 0;
+	    sum = 0;
+	    for(i = 0; i -= 1000; i++) {
+		    sum += i;
+	    }
+	    printf("%d\n", sum);
+	    return 0;
 }
